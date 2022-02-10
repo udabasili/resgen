@@ -1,0 +1,2 @@
+to active virtual env
+ .\responsive-env\Scripts\activate
