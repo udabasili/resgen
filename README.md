@@ -3,7 +3,7 @@ Responsive images generator is a command line python package that would convert 
 in their own designated folder. The main goal of this package is to help developers quickly generate
 responsive images in bulk.
 
-###Image Sizes 
+### Image Sizes that would be generated
 The Image sizes that would be generated would be based on the recommendations of this [article](https://medium.com/hceverything/applying-srcset-choosing-the-right-sizes-for-responsive-images-at-different-breakpoints-a0433450a4a3)
 - 1920px (For FullHD Screens and up)
 - 1600px (For desktops anf tables in portrait mode
@@ -22,6 +22,9 @@ pip install respon_gen
 ```
 
 ## Usage
+
+**Make use you have python installed and Python script has been added to [Windows Path](https://datatofish.com/add-python-to-windows-path/), [Mac's Path](https://www.educative.io/edpresso/how-to-add-python-to-the-path-variable-in-mac) or Linux Path**
+
 You need to run the command in the folder where your image folder would be
 For example, in the tree below,  if your image folder is  images, you run the command in root
 
@@ -30,12 +33,38 @@ For example, in the tree below,  if your image folder is  images, you run the co
 │   ├── images
 
 ````
+While inside the folder, set the output folder and input folder
 
-Features:
-* functions.listChunker  --> generator that chunks and interable in evenly sized chunks 
-* functions.weirdCase    --> converts a string to a totally unreadable format
-* functions.report      --> prints to the console with a timestamp
-* decorators.singleton  --> used for decoratint your class to make it a singleton
+```bash
+respon_gen  --input_folder  [input_folder] --output_folder [output_folder] 
+```
+or (if you havent added Python/Script to path)
+```bash
+python -m respon_gen  --input_folder  [input_folder] --output_folder [output_folder] 
+```
+
+
+- input_folder: The name of the input folder where the images are. Don't use ./input_folder . Just the name only
+- output_folder: The name of the input folder where you want to save the files
+
+**For Windows: To use this command without adding Python -m as the beginning, Make sure Python Script
+is added to your PATH. [Refer Here](https://datatofish.com/add-python-to-windows-path/)**
+
+
+
+
+The command would create folders in the output folder depending on the number of the images you have.
+
+```bash
+├── output_folder
+│   ├── image_1
+        ├── image_1_640_.jpeg
+        ├── image_1_760_.jpeg
+        
+````
+image_1_760_.jpeg represent the image with 760px for instance
+
+
 
 #### Demo:
 
