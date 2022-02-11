@@ -9,11 +9,11 @@ with open("requirements.txt", "r",  encoding="utf-16") as fh:
     requirements = fh.read()
 
 setup(
-    name='respon_gen',
-    version='0.0.1',
+    name='resgen',
+    version='0.0.5',
     entry_points='''
         [console_scripts]
-        respon=respon_gen:main
+        resgen=resgen:main
     ''',
     author='Udendu Abasili',
     description='This package was made to help generate responsive images in bulk',
@@ -22,7 +22,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     license='MIT',
-    py_modules=['respon_gen', 'app'],
+    py_modules=['resgen', 'app'],
     packages=find_packages(),
     install_requires=[requirements],
     python_requires='>=3.2',

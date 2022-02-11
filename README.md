@@ -18,7 +18,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install Res lik
 Rerun this command to check for and install  updates .
 
 ```bash
-pip install respon_gen
+pip install resgen
 ```
 
 ## Usage
@@ -36,11 +36,11 @@ For example, in the tree below,  if your image folder is  images, you run the co
 While inside the folder, set the output folder and input folder
 
 ```bash
-respon_gen  --input_folder  [input_folder] --output_folder [output_folder] 
+resgen  --input_folder  [input_folder] --output_folder [output_folder] 
 ```
 or (if you havent added Python/Script to path)
 ```bash
-python -m respon_gen  --input_folder  [input_folder] --output_folder [output_folder] 
+python -m resgen  --input_folder  [input_folder] --output_folder [output_folder] 
 ```
 
 
@@ -69,7 +69,7 @@ image_1_760_.jpeg represent the image with 760px for instance
 #### Demo:
 
 ```bash
- respon_gen --input_folder input_folder --output_folder output_folder
+ resgen --input_folder input_folder --output_folder output_folder
 ```
 
 ## Contributing

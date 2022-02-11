@@ -23,10 +23,10 @@ def cli():
     help='The name of the output folder you want to place the saved images is required. Type respon --help to  see usage ')
 def main(output_folder, input_folder):
     if not input_folder:
-        print('You must put in the input folder name')
+        print('The name of the input folder where the image(s) are located us required. Type respon --help to see usage ')
         return
     if not output_folder:
-        print('You must put in the output folder name')
+        print('The name of the output folder you want to place the saved images is required. Type respon --help to  see usage ')
         return
     current_directory = os.getcwd()
     try:
