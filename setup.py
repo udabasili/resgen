@@ -10,7 +10,7 @@ with open("requirements.txt", "r",  encoding="utf-16") as fh:
 
 setup(
     name='resgen',
-    version='0.0.5',
+    version='1.0.0',
     entry_points='''
         [console_scripts]
         resgen=resgen:main
