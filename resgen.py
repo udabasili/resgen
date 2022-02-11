@@ -14,7 +14,7 @@ def cli():
     '-i',
     '--input_folder',
     type=str, 
-    help='The name of the input folder where the image(s) are located us required.')
+    help='The name of the input folder where the image(s) are located is required.')
 @click.option(
     '-o',
     '--output_folder',
@@ -23,7 +23,7 @@ def cli():
     help='The name of the output folder you want to place the saved images is required.')
 def main(output_folder, input_folder):
     if not input_folder:
-        print('The name of the input folder where the image(s) are located us required. Type respon --help to see usage ')
+        print('The name of the input folder where the image(s) are located is required. Type respon --help to see usage ')
         return
     if not output_folder:
         print('The name of the output folder you want to place the saved images is required. Type respon --help to  see usage ')
