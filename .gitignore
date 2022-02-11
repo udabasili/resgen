@@ -6,3 +6,4 @@ output
 dist
 build
 respon_gen.egg-info
+resgen.egg-info
